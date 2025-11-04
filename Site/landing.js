@@ -1,3 +1,7 @@
+$(function(){
+    $("#navbar-container").load("heading.html")
+});
+
 const articles = [
     { title: "Breaking News: Headline 1", img: "https://via.placeholder.com/300x200" },
     { title: "Breaking News: Headline 2", img: "https://via.placeholder.com/300x200" },

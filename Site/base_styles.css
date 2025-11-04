@@ -1,0 +1,29 @@
+* {
+    margin:0;
+    overflow:hidden;
+}
+:root {
+    --primary-color:#26532D;
+    --secondary-color: #28837a;
+    --text-color: #1F2937;
+    --off-white: #fff7e1;
+}
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 1400px) {
+    
+}

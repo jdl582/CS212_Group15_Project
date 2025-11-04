@@ -32,6 +32,9 @@ footer {
     margin-bottom: 2rem;
     z-index:5;
 }
+#transparent-logo {
+    width:6rem;
+}
 
 #navbar-container {
     position: relative;

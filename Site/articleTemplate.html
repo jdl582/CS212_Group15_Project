@@ -6,43 +6,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="base_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    
     <div id="navbar-container"></div>
-    <div id = "outputArea" class="container my-4">
+    
     
     <div id = "headline" class = "row">
         <h2 id = "headline">
             Headline
         </h2>
     </div>
+    <main>
+        <div id = "articleImage" class = "row">
+            <img src="https://via.placeholder.com/300x200" class=" w-100" alt="Article image">
+        </div>
+        <div id = "imageCaption">
+            <p>
+                image caption:
+            </p>
+        </div>
+        <div class = "row">
+            <h2 id = "title">
+                Article Title:
+            </h2>
+        </div>
 
-    <div id = "articleImage" class = "row">
-        <img src="https://via.placeholder.com/300x200" class=" w-100" alt="Article image">
-    </div>
-    <div id = "imageCaption">
-        <p>
-            image caption:
-        </p>
-    </div>
-    <div class = "row">
-        <h2 id = "title">
-            Article Title:
-        </h2>
-    </div>
+        <div class = "row">
+            <h5 id = "Author">
+                Author line:
+            </h5>
+        </div>
 
-    <div class = "row">
-        <h5 id = "Author">
-            Author line:
-        </h5>
-    </div>
-
-    <div class = "row">
-        <p id = "ArticleBody">
-            body
-        </p>
-    </div>
-
+        <div class = "row">
+            <p id = "ArticleBody">
+                body
+            </p>
+        </div>
+        <div id="modal-container"></div>
+    </main>
 
     <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
@@ -51,6 +57,11 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    emailjs.init('UqGLpPONiHaw4VIdG');
+    </script>
     <script src="landing.js"></script>
+    <script src="modals.js"></script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="helpModalLabel">Help Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="helpForm">
+          <div class="mb-3">
+            <label for="userName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="userName" required>
+          </div>
+          <div class="mb-3">
+            <label for="userEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="userEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="userMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="userMessage" rows="4" required></textarea>
+          </div>
+          <input type="hidden" id="helpType" value="">
+          <input type="hidden" id="submissionDate" value="">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>

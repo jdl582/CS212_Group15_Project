@@ -1,56 +1,195 @@
-html,body {
-    font-family: Arial, sans-serif;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
+:root {
+    --primary-color:#26532D;
+    --secondary-color: #28837a;
+    --text-color: #1F2937;
+    --off-white: #fff7e1;
 }
 
-header h1 {
-    font-weight: bold;
+body {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--off-white);
+}
+
+.bg-body-tertiary {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: 70px;              
+    object-fit: contain;
+    border-radius: 50%;       
+    padding: 5px;
+    background-color: white; 
+    border: 2px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    margin-left:5vh;
+}
+
+.navbar .container-fluid {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item img {
+    border-radius: inherit;
+}
+.navbar-nav {
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--off-white) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--off-white);
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--off-white);
+}
+
+.dropdown-item:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.navbar .form-control {
+    border: 1px solid var(--secondary-color);
+}
+
+.navbar .btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.navbar .btn:hover {
+    background-color: #1f6c63;
+}
+
+.news-scroll {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.news-scroll a {
+    color: white;
+    text-decoration: none;
+}
+
+.news-scroll a:hover {
+    text-decoration: underline;
+}
+
+.news-scroll .dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--off-white);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.carousel-caption h5 {
+    background-color: rgba(38, 83, 45, 0.8); /* primary w/ alpha */
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+}
+
+.carousel-caption p {
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .card-title {
-    font-size: 1.5rem;
-}
-
-footer {
-    font-size: 0.9rem;
+    color: var(--primary-color);
 }
 
 .btn-primary {
-    background-color: darkgreen;
-    border-color: black;
-}
-.carousel-inner img {
-  height: 600px;           /* or smaller, like 300px */
-  object-fit: cover;
-  object-position: center;
+    background-color: var(--primary-color) !important;
+    border: none;
 }
 
-.carousel {
-    position: relative;
-    margin-bottom: 2rem;
-    z-index:5;
-}
-#transparent-logo {
-    width:6rem;
+.btn-primary:hover {
+    background-color: #1d4023 !important;
 }
 
-#navbar-container {
-    position: relative;
-    z-index: 10;
+.list-group-item {
+    border: none;
+    border-left: 4px solid transparent;
+    transition: 0.2s;
 }
 
-.carousel-inner img {
-    width: 100%;
-    max-height: 600px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.list-group-item:hover {
+    border-left: 4px solid var(--secondary-color);
+    background-color: #eefaf8;
 }
 
-.carousel-inner {
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+footer {
+    background-color: var(--primary-color) !important;
+    color: var(--off-white);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        display:flex;
+        width:auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 1400px) {
+    
 }

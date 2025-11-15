@@ -19,7 +19,7 @@ articles.forEach(article => {
             <img src="${article.img}" class="card-img-top" alt="${article.title}">
             <div class="card-body">
                 <h5 class="card-title">${article.title}</h5>
-                <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                <a href="articleTemplate.html" class="btn btn-sm btn-primary">Read More</a>
             </div>
         </div>
     `;

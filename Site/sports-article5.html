@@ -1,0 +1,85 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponder News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="base_styles.css">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Resources/ponder-high-resolution-logo-transparent.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <div id = "outputArea" class="container my-4">
+    
+    <div id = "header" class = "row">
+        <h1 id = "header">
+            Community Spirit Shines in Flagstaff’s Weekend Sports Action
+        </h1>
+    </div>
+    <main>
+         
+        <div id = "articleImage" class = "row">
+            <img src="/Resources/Sports/stadium.webp" class=" w-100" alt="Article image">
+        </div>
+        <div id = "imageCaption">
+            <h6>
+                NAU skydome
+            </h6>
+        </div>
+        <div class = "row">
+            <h2 id = "title">
+                Flagstaff Fans Bring Big Energy to Small-Town Stadiums
+            </h2>
+        </div>
+
+        <div class = "row">
+            <h5 id = "Author">
+                Written by ChatGPT,
+            </h5>
+        </div>
+
+        <div class = "row">
+            <p id = "ArticleBody">
+                Flagstaff’s local stadiums were buzzing this weekend as fans of all ages turned out to support their favorite teams. From high school football fields to community sports complexes, the energy in the stands made each matchup feel like a major event in the mountain town.
+            </p>
+            <p  id = "ArticleBody">
+                Families, students, and longtime residents packed the bleachers, bringing signs, team colors, and plenty of enthusiasm. Their cheers boosted players on the field, creating an atmosphere that felt bigger than the small-town settings.
+            </p>
+            <p  id = "ArticleBody">
+                Coaches and athletes said the strong fan presence adds excitement to every game and helps build a deep sense of community pride. With sports season in full swing, Flagstaff continues to show that passionate support can turn any local matchup into a memorable experience.
+            </p>
+            
+            <p id = "ArticleBody">
+                *Note: This article is written by A.I and is only intended to show a proof of concept for the news website. 
+            </p>
+        </div>
+        <div id="modal-container"></div>
+    
+        
+    </main>
+        
+        
+    
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            Ponder News 11/01/2025
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    emailjs.init('UqGLpPONiHaw4VIdG');
+    </script>
+    <script src="landing.js"></script>
+    <script src="modals.js"></script>
+</body>
+</html>
